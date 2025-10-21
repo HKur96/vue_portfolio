@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Inter', 'Outfit', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(15 23 42);
+    color: white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    transition: all 0.3s;
+  }
+
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #8b5cf6, #a855f7, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-primary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    background: linear-gradient(to right, #8b5cf6, #a855f7);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    transform: scale(1.05);
+  }
+
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 2px solid rgba(139, 92, 246, 0.5);
+    backdrop-filter: blur(4px);
+  }
+
+  .btn-secondary:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+.page-transition-enter-active,
+.page-transition-leave-active {
+  transition: all 0.3s ease;
+}
+
+.page-transition-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
