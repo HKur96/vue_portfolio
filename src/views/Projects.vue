@@ -53,8 +53,8 @@ const projects = [
 ]
 </script>
 
-<template>
-  <div class="min-h-screen pt-24 pb-16">
+<template >
+  <div ref="projectsTarget" id="projects" class="min-h-screen pt-24 pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
@@ -65,14 +65,14 @@ const projects = [
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           v-for="(project, index) in projects"
           :key="index"
           :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
           :data-aos-delay="(index % 3) * 100"
         >
-          <ProjectCard :project="project" />
+          <ProjectCard :project="project" :index="index" />
         </div>
       </div>
 

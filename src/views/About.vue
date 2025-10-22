@@ -34,8 +34,8 @@ const experiences = [
 ]
 </script>
 
-<template>
-  <div class="min-h-screen pt-24 pb-16">
+<template >
+  <div ref="aboutTarget" id="about" class="min-h-screen pt-24 pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
@@ -79,7 +79,7 @@ const experiences = [
                 </div>
                 <div class="h-2 bg-slate-800 rounded-full overflow-hidden">
                   <div
-                    class="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out group-hover:shadow-glow"
+                    class="h-full bg-linear-to-r from-primary to-accent rounded-full transition-all duration-1000 ease-out group-hover:shadow-glow"
                     :style="{ width: `${skill.level}%` }"
                   ></div>
                 </div>

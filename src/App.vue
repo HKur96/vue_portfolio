@@ -2,6 +2,10 @@
 import { ref } from 'vue'
 import { RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
+import Home from './views/Home.vue'
+import Contact from './views/Contact.vue'
+import About from './views/About.vue'
+import Projects from './views/Projects.vue'
 import Footer from './components/Footer.vue'
 import LoadingSplash from './components/LoadingSplash.vue'
 
@@ -21,9 +25,9 @@ const handleSplashComplete = () => {
 
       <Navbar />
 
-      <Transition name="page-transition" mode="out-in">
+      <!-- <Transition name="page-transition" mode="out-in">
         <RouterView />
-      </Transition>
+      </Transition> -->
 
       <Footer />
     </template>

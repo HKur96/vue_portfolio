@@ -22,8 +22,8 @@ const contactInfo = [
 ];
 </script>
 
-<template>
-  <div class="min-h-screen pt-24 pb-16">
+<template >
+  <div ref="contactTarget" id="contact" class="min-h-screen pt-24 pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16" data-aos="fade-up">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
@@ -111,7 +111,7 @@ const contactInfo = [
             </a>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>

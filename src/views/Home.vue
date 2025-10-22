@@ -7,7 +7,7 @@ const skills = ['Flutter', 'Dart', 'Firebase', 'Kotlin', 'Swift', 'REST APIs']
 </script>
 
 <template>
-  <div class="min-h-screen pt-16">
+  <div ref="homeTarget" id="home" class="min-h-screen pt-16">
     <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-secondary/20"></div>
 
@@ -15,7 +15,7 @@ const skills = ['Flutter', 'Dart', 'Firebase', 'Kotlin', 'Swift', 'REST APIs']
       <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/30 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="mb-8" data-aos="zoom-in" data-aos-duration="1000">
+        <!-- <div class="mb-8" data-aos="zoom-in" data-aos-duration="1000">
           <div class="relative inline-block">
             <div class="absolute inset-0 bg-linear-to-br from-primary via-accent to-secondary rounded-full blur-2xl opacity-50 animate-pulse"></div>
             <div class="relative w-40 h-40 md:w-48 md:h-48 rounded-full bg-linear-to-br from-primary to-accent p-1 shadow-glow-lg">
@@ -26,7 +26,7 @@ const skills = ['Flutter', 'Dart', 'Firebase', 'Kotlin', 'Swift', 'REST APIs']
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <h1
           class="text-5xl md:text-7xl font-bold mb-4"
